@@ -1,4 +1,5 @@
 #include <bits/stdc++.h>
+#include <sstream>
 
 using namespace std;
 
@@ -31,6 +32,13 @@ void subsequences(size_t i, string & in, string out)
 //     subsequences(i+1, j+1, in, out);
 //     subsequences(i+1, j, in, out);
 // }
+
+string itos(int i)
+{
+    stringstream s;
+    s << i;
+    return s.str();
+}
 
 int main()
 {
