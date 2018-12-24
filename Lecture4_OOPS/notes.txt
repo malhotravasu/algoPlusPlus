@@ -1,2 +1,0 @@
-Stanford Linked List Basics
-Stanford Linked List Problems

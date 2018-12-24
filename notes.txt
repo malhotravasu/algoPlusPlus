@@ -1,0 +1,3 @@
+Stanford Linked List Basics
+Stanford Linked List Problems
+Stanford Binary Tree Notes
