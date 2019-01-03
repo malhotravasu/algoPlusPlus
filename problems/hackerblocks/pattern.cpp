@@ -12,7 +12,26 @@ int main()
     int midc = cols/2;
     out[0][midc] = 1;
     out[rows-1][midc] = 1;
+
+    for (int i=1, offset=n-3; i<midr; i++, offset-=2)
+    {
+        for (int j=offset, lim=i+1; lim>=1; lim--, j++)
+        {
+            out[i][j] = lim;
+        }
+    }
+
+    for (int i=midr, j=0, val=n/2+1; val>=1; val--, j++)
+        out[i][j] = val;
     
+    for (int i=midr+1, offset=2, lim=n/2; i<n; i++, offset+=2, lim--)
+    {
+        for (int j=offset, val=lim; val>=1; val--, j++)
+        {
+            out[i][j] = val;
+        }
+    }
+
     //Mirror the Pattern
     for (int i=0; i<rows; i++)
     {
