@@ -10,8 +10,7 @@ int main()
     int people {0}, num {365};
     while (p >= threshold)
     {
-        p *= num;
-        p /= 365;
+        p = (p*num)/365;
         num--;
         people++;
     }
